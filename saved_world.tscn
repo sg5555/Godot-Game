@@ -1,0 +1,1892 @@
+[gd_scene load_steps=135 format=2]
+
+[ext_resource path="res://World/Items/PickableItem.gd" type="Script" id=1]
+[ext_resource path="res://World/Items/PickableItem.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/Items/ItemDrop.gd" type="Script" id=3]
+[ext_resource path="res://World/CliffTileset.png" type="Texture" id=4]
+[ext_resource path="res://World/GrassBg.png" type="Texture" id=5]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/main_theme.tres" type="Theme" id=7]
+[ext_resource path="res://World/Items/ItemDrop.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Player/Player.gd" type="Script" id=9]
+[ext_resource path="res://World/SandPathAutotile.png" type="Texture" id=10]
+[ext_resource path="res://UI/HealthUI.gd" type="Script" id=12]
+[ext_resource path="res://Player/Camera2D.gd" type="Script" id=13]
+[ext_resource path="res://UI/Inventory.gd" type="Script" id=14]
+[ext_resource path="res://Entities/DogAttack.gd" type="Script" id=15]
+[ext_resource path="res://UI/Hotbar.gd" type="Script" id=16]
+[ext_resource path="res://World/Plants/AppleTree.gd" type="Script" id=17]
+[ext_resource path="res://World/Plants/BerryBush.gd" type="Script" id=18]
+[ext_resource path="res://UI/OldCrafting.gd" type="Script" id=19]
+[ext_resource path="res://UI/UI.gd" type="Script" id=20]
+[ext_resource path="res://Entities/Dog.gd" type="Script" id=21]
+[ext_resource path="res://World/Plants/MoneyTree.gd" type="Script" id=22]
+[ext_resource path="res://World/Objects/NettlePlantPot.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Entities/RedButterfly.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Entities/PurpleButterfly.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Entities/OrangeButterfly.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Entities/GreenButterfly.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Entities/YellowButterfly.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Entities/YorangeButterfly.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Entities/BlueButterfly.tscn" type="PackedScene" id=30]
+[ext_resource path="res://World/Objects/BlueLamp.tscn" type="PackedScene" id=31]
+[ext_resource path="res://World/Objects/RedLamp.tscn" type="PackedScene" id=32]
+[ext_resource path="res://World/Objects/NeonSign.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Entities/Doge.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Entities/CyanButterfly.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Entities/CyanButterfly2.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Entities/PinkButterfly.tscn" type="PackedScene" id=37]
+[ext_resource path="res://World/Objects/Lamp.tscn" type="PackedScene" id=38]
+[ext_resource path="res://UI/CurrentTimeCounter.tscn" type="PackedScene" id=39]
+[ext_resource path="res://UI/Crafting.tscn" type="PackedScene" id=40]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Entities/Dog.tscn" type="PackedScene" id=43]
+[ext_resource path="res://UI/Hotbar.tscn" type="PackedScene" id=44]
+[ext_resource path="res://UI/FPS Counter.tscn" type="PackedScene" id=45]
+[ext_resource path="res://UI/Inventory.tscn" type="PackedScene" id=46]
+[ext_resource path="res://World/Buildings/SmallHouse2.tscn" type="PackedScene" id=47]
+[ext_resource path="res://UI/PauseMenu.tscn" type="PackedScene" id=48]
+[ext_resource path="res://UI/Collections.tscn" type="PackedScene" id=49]
+[ext_resource path="res://Player/Camera2D.tscn" type="PackedScene" id=50]
+[ext_resource path="res://World/Buildings/SmallHouse.tscn" type="PackedScene" id=51]
+[ext_resource path="res://Entities/DogAttack.tscn" type="PackedScene" id=52]
+[ext_resource path="res://Entities/SwallowButterfly.tscn" type="PackedScene" id=53]
+[ext_resource path="res://World/Objects/OldRadio.tscn" type="PackedScene" id=54]
+[ext_resource path="res://World/Objects/OldRadio.gd" type="Script" id=55]
+[ext_resource path="res://World.gd" type="Script" id=56]
+[ext_resource path="res://UI/Collections.gd" type="Script" id=57]
+[ext_resource path="res://World/Objects/MotionDetectorLamp.gd" type="Script" id=58]
+[ext_resource path="res://UI/CurrentTimeCounter.gd" type="Script" id=59]
+[ext_resource path="res://World/Objects/Lamp.gd" type="Script" id=60]
+[ext_resource path="res://Entities/Butterfly.gd" type="Script" id=61]
+[ext_resource path="res://Effects/DayNightCycle.gd" type="Script" id=62]
+[ext_resource path="res://World/Objects/NettlePlantPot.gd" type="Script" id=63]
+[ext_resource path="res://World/Buildings/Building.gd" type="Script" id=64]
+[ext_resource path="res://UI/PauseMenu.gd" type="Script" id=65]
+[ext_resource path="res://UI/FPS Counter.gd" type="Script" id=66]
+[ext_resource path="res://World/Objects/PlantPot.tscn" type="PackedScene" id=67]
+[ext_resource path="res://World/Objects/WoodTable.tscn" type="PackedScene" id=68]
+[ext_resource path="res://World/Objects/WoodChairFront.tscn" type="PackedScene" id=69]
+[ext_resource path="res://World/Objects/GreenLamp.tscn" type="PackedScene" id=70]
+[ext_resource path="res://World/Plants/Fern.tscn" type="PackedScene" id=71]
+[ext_resource path="res://World/Objects/StreetLamp.tscn" type="PackedScene" id=72]
+[ext_resource path="res://World/Objects/ColourChangingLamp.tscn" type="PackedScene" id=73]
+[ext_resource path="res://World/Plants/Bush.tscn" type="PackedScene" id=74]
+[ext_resource path="res://World/Interiors/SmallHouseInterior1.tscn" type="PackedScene" id=75]
+[ext_resource path="res://World/Plants/OakTree.tscn" type="PackedScene" id=76]
+[ext_resource path="res://World/Plants/BerryBush.tscn" type="PackedScene" id=77]
+[ext_resource path="res://World/Plants/AppleTree.tscn" type="PackedScene" id=78]
+[ext_resource path="res://World/Plants/MoneyTree.tscn" type="PackedScene" id=79]
+[ext_resource path="res://World/Interiors/SmallHouseInterior2.tscn" type="PackedScene" id=80]
+[ext_resource path="res://World/Objects/Torch.tscn" type="PackedScene" id=81]
+[ext_resource path="res://World/Tiles/CliffTileMap.tscn" type="PackedScene" id=82]
+[ext_resource path="res://World/Objects/MotionDetectorLamp.tscn" type="PackedScene" id=83]
+
+[sub_resource type="TileSet" id=1]
+0/name = "SandPathAutotile.png 0"
+0/texture = ExtResource( 10 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 704, 320 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 48, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 56, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 24, Vector2( 3, 0 ), 144, Vector2( 3, 1 ), 146, Vector2( 3, 2 ), 18, Vector2( 3, 3 ), 16, Vector2( 4, 0 ), 176, Vector2( 4, 1 ), 182, Vector2( 4, 2 ), 434, Vector2( 4, 3 ), 50, Vector2( 4, 4 ), 178, Vector2( 5, 0 ), 248, Vector2( 5, 1 ), 255, Vector2( 5, 2 ), 507, Vector2( 5, 3 ), 59, Vector2( 5, 4 ), 251, Vector2( 6, 0 ), 440, Vector2( 6, 1 ), 447, Vector2( 6, 2 ), 510, Vector2( 6, 3 ), 62, Vector2( 6, 4 ), 446, Vector2( 7, 0 ), 152, Vector2( 7, 1 ), 155, Vector2( 7, 2 ), 218, Vector2( 7, 3 ), 26, Vector2( 7, 4 ), 154, Vector2( 8, 0 ), 184, Vector2( 8, 1 ), 191, Vector2( 8, 2 ), 506, Vector2( 8, 3 ), 58, Vector2( 8, 4 ), 186, Vector2( 9, 0 ), 443, Vector2( 9, 1 ), 254, Vector2( 9, 2 ), 442, Vector2( 9, 3 ), 190, Vector2( 10, 2 ), 250, Vector2( 10, 3 ), 187 ]
+0/autotile/icon_coordinate = Vector2( 3, 3 )
+0/autotile/tile_size = Vector2( 64, 64 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=39]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=40]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=41]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=42]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=44]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=45]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=46]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=48]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=50]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=51]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="TileSet" id=52]
+0/name = "CliffTileset.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 704, 320 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 48, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 56, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 24, Vector2( 3, 0 ), 144, Vector2( 3, 1 ), 146, Vector2( 3, 2 ), 18, Vector2( 3, 3 ), 16, Vector2( 4, 0 ), 176, Vector2( 4, 1 ), 182, Vector2( 4, 2 ), 434, Vector2( 4, 3 ), 50, Vector2( 4, 4 ), 178, Vector2( 5, 0 ), 248, Vector2( 5, 1 ), 255, Vector2( 5, 2 ), 507, Vector2( 5, 3 ), 59, Vector2( 5, 4 ), 251, Vector2( 6, 0 ), 440, Vector2( 6, 1 ), 447, Vector2( 6, 2 ), 510, Vector2( 6, 3 ), 62, Vector2( 6, 4 ), 446, Vector2( 7, 0 ), 152, Vector2( 7, 1 ), 155, Vector2( 7, 2 ), 218, Vector2( 7, 3 ), 26, Vector2( 7, 4 ), 154, Vector2( 8, 0 ), 184, Vector2( 8, 1 ), 191, Vector2( 8, 2 ), 506, Vector2( 8, 3 ), 58, Vector2( 8, 4 ), 186, Vector2( 9, 0 ), 443, Vector2( 9, 1 ), 254, Vector2( 9, 2 ), 442, Vector2( 9, 3 ), 190, Vector2( 10, 2 ), 250, Vector2( 10, 3 ), 187 ]
+0/autotile/icon_coordinate = Vector2( 3, 3 )
+0/autotile/tile_size = Vector2( 64, 64 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 27 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 28 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 29 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 30 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 31 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 33 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 34 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 35 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 8, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 36 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 37 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 38 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 39 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 8, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 40 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 41 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 42 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 8, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 43 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 9, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 44 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 10, 3 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 45 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 8, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 46 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 9, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 47 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 8, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 48 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 9, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 49 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 9, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 50 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 10, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 51 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="Environment" id=53]
+background_mode = 4
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/3 = false
+glow_levels/5 = false
+glow_intensity = 0.2
+glow_blend_mode = 1
+glow_hdr_threshold = 1.21
+glow_bicubic_upscale = true
+adjustment_enabled = true
+
+[node name="World" type="Node2D"]
+script = ExtResource( 56 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( -715, -520 )
+scale = Vector2( 0.997649, 1 )
+texture = ExtResource( 5 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -144, 6, 2830, 1870 )
+
+[node name="SandPathTileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1, 8, 0, 2, 65536, 0, 131072, 65537, 0, 131073, 65538, 0, 131073, 65539, 0, 131073, 65540, 0, 131073, 65541, 0, 131073, 65542, 0, 131073, 65543, 0, 131073, 65544, 0, 9, 65545, 0, 2, 65550, 0, 4, 65551, 0, 196609, 65552, 0, 196609, 65553, 0, 196609, 65554, 0, 196609, 65555, 0, 196610, 131077, 1, 0, 131080, 0, 65536, 131081, 0, 131077, 131082, 0, 2, 131086, 0, 65539, 196616, 0, 131072, 196617, 0, 65542, 196618, 0, 131077, 196619, 0, 1, 196620, 0, 1, 196621, 0, 1, 196622, 0, 131079, 262153, 0, 131072, 262154, 0, 131073, 262155, 0, 131073, 262156, 0, 131073, 262157, 0, 65542, 262158, 0, 65538, 327693, 0, 65536, 327694, 0, 65538, 393229, 0, 65536, 393230, 0, 65538, 458765, 0, 65536, 458766, 0, 65538, 524301, 0, 65536, 524302, 0, 65538, 524303, 1, 0, 524304, 1, 1, 524305, 1, 1, 524306, 1, 1, 524307, 1, 1, 524308, 1, 2, 589824, 0, 0, 589825, 0, 1, 589826, 0, 1, 589827, 0, 1, 589828, 0, 1, 589829, 0, 1, 589830, 0, 1, 589831, 0, 1, 589832, 0, 1, 589833, 0, 1, 589834, 0, 1, 589835, 0, 1, 589836, 0, 1, 589837, 0, 131078, 589838, 0, 65538, 589839, 1, 0, 589840, 1, 65537, 589841, 1, 65537, 589842, 1, 65537, 589843, 1, 65537, 589844, 1, 65538, 655360, 0, 131072, 655361, 0, 131073, 655362, 0, 131073, 655363, 0, 131073, 655364, 0, 131073, 655365, 0, 131073, 655366, 0, 131073, 655367, 0, 131073, 655368, 0, 131073, 655369, 0, 131073, 655370, 0, 131073, 655371, 0, 131073, 655372, 0, 131073, 655373, 0, 131073, 655374, 0, 131074, 655375, 1, 0, 655376, 1, 131073, 655377, 1, 131073, 655378, 1, 131073, 655379, 1, 131073, 655380, 1, 196613, 655381, 1, 196610 )
+
+[node name="CliffTileMap" type="TileMap" parent="." instance=ExtResource( 82 )]
+tile_set = SubResource( 52 )
+collision_mask = 2147483648
+format = 1
+tile_data = PoolIntArray( -655332, 0, 0, -655331, 0, 1, -655330, 0, 1, -655329, 0, 1, -655328, 0, 2, -524300, 0, 4, -524299, 0, 196609, -524298, 0, 196609, -524297, 0, 196609, -524296, 0, 196609, -524295, 0, 196609, -524294, 0, 196609, -524293, 0, 196609, -524292, 0, 196609, -524291, 0, 196609, -524290, 0, 196609, -524289, 0, 196609, -589824, 0, 196609, -589823, 0, 196609, -589822, 0, 196609, -589821, 0, 196609, -589820, 0, 196609, -589819, 0, 196609, -589818, 0, 196609, -589817, 0, 196609, -589816, 0, 196609, -589815, 0, 196609, -589814, 0, 196609, -589813, 0, 196609, -589812, 0, 196609, -589811, 0, 196609, -589810, 0, 196609, -589809, 0, 196609, -589808, 0, 196609, -589807, 0, 196609, -589806, 0, 196609, -589805, 0, 196609, -589804, 0, 196609, -589803, 0, 196609, -589802, 0, 196609, -589801, 0, 196609, -589800, 0, 196609, -589799, 0, 196609, -589798, 0, 196609, -589797, 0, 196609, -589796, 0, 196614, -589795, 0, 131073, -589794, 0, 131073, -589793, 0, 131073, -589792, 0, 196613, -589791, 0, 7, -458764, 0, 65539, -524255, 0, 65539, -393229, 0, 0, -393228, 0, 131079, -458719, 0, 65539, -327693, 0, 65536, -327692, 0, 65538, -393183, 0, 65539, -262157, 0, 65536, -262156, 0, 65538, -327647, 0, 65539, -196621, 0, 65536, -196620, 0, 65538, -262111, 0, 65539, -131085, 0, 65536, -131084, 0, 65538, -196575, 0, 65539, -65549, 0, 65536, -65548, 0, 65538, -131039, 0, 65539, -13, 0, 65536, -12, 0, 65538, -65527, 0, 0, -65526, 0, 1, -65525, 0, 1, -65524, 0, 1, -65523, 0, 2, -65503, 0, 65539, 65523, 0, 65536, 65524, 0, 65538, 9, 0, 131072, 10, 0, 131073, 11, 0, 131073, 12, 0, 131073, 13, 0, 131074, 33, 0, 65539, 131059, 0, 65536, 131060, 0, 65538, 65569, 0, 65539, 196595, 0, 65536, 196596, 0, 65538, 131090, 0, 0, 131091, 0, 1, 131092, 0, 2, 131105, 0, 65539, 262131, 0, 65536, 262132, 0, 65538, 196625, 0, 0, 196626, 0, 131078, 196627, 0, 65537, 196628, 0, 65538, 196641, 0, 65539, 327667, 0, 65536, 327668, 0, 65538, 262145, 0, 0, 262146, 0, 1, 262147, 0, 1, 262148, 0, 2, 262160, 0, 0, 262161, 0, 131078, 262162, 0, 65537, 262163, 0, 65537, 262164, 0, 65538, 262177, 0, 65539, 393203, 0, 65536, 393204, 0, 65538, 327681, 0, 65536, 327682, 0, 65537, 327683, 0, 65537, 327684, 0, 65538, 327686, 0, 196608, 327687, 0, 196610, 327696, 0, 65536, 327697, 0, 65537, 327698, 0, 65537, 327699, 0, 65537, 327700, 0, 65538, 327713, 0, 65539, 458739, 0, 65536, 458740, 0, 65538, 393217, 0, 131072, 393218, 0, 131073, 393219, 0, 131073, 393220, 0, 131074, 393232, 0, 65536, 393233, 0, 65537, 393234, 0, 65537, 393235, 0, 65537, 393236, 0, 65538, 393249, 0, 131076, 393250, 0, 2, 524275, 0, 65536, 524276, 0, 65538, 458768, 0, 131072, 458769, 0, 65542, 458770, 0, 65537, 458771, 0, 65537, 458772, 0, 65538, 458785, 0, 65536, 458786, 0, 65538, 589811, 0, 65536, 589812, 0, 65538, 524305, 0, 65536, 524306, 0, 65537, 524307, 0, 65537, 524308, 0, 65538, 524321, 0, 65536, 524322, 0, 65538, 655347, 0, 65536, 655348, 0, 65538, 589840, 0, 0, 589841, 0, 131078, 589842, 0, 65541, 589843, 0, 131073, 589844, 0, 131074, 589857, 0, 65536, 589858, 0, 65538, 720883, 0, 65536, 720884, 0, 65538, 655376, 0, 131072, 655377, 0, 131073, 655378, 0, 131074, 655393, 0, 65536, 655394, 0, 65538, 786419, 0, 65536, 786420, 0, 65538, 720929, 0, 65536, 720930, 0, 65538, 851955, 0, 65536, 851956, 0, 65538, 786465, 0, 65540, 786466, 0, 131074, 917491, 0, 65536, 917492, 0, 65538, 852001, 0, 65539, 983027, 0, 65536, 983028, 0, 65538, 917537, 0, 65539, 1048563, 0, 65536, 1048564, 0, 65538, 983073, 0, 65539, 1114099, 0, 65536, 1114100, 0, 65538, 1048609, 0, 65539, 1179635, 0, 131072, 1179636, 0, 65543, 1114145, 0, 65539, 1245172, 0, 65539, 1179681, 0, 65539, 1310708, 0, 65539, 1245217, 0, 65539, 1376244, 0, 65539, 1310753, 0, 65539, 1441780, 0, 196612, 1441781, 0, 196609, 1441782, 0, 196609, 1441783, 0, 196609, 1441784, 0, 196609, 1441785, 0, 196609, 1441786, 0, 196609, 1441787, 0, 196609, 1441788, 0, 196609, 1441789, 0, 196609, 1441790, 0, 196609, 1441791, 0, 196609, 1376256, 0, 196609, 1376257, 0, 196609, 1376258, 0, 196609, 1376259, 0, 196609, 1376260, 0, 196609, 1376261, 0, 196609, 1376262, 0, 196609, 1376263, 0, 196609, 1376264, 0, 196609, 1376265, 0, 196609, 1376266, 0, 196609, 1376267, 0, 196609, 1376268, 0, 196609, 1376269, 0, 196609, 1376270, 0, 196609, 1376271, 0, 196609, 1376272, 0, 196609, 1376273, 0, 196609, 1376274, 0, 196609, 1376275, 0, 196609, 1376276, 0, 196609, 1376277, 0, 196609, 1376278, 0, 196609, 1376279, 0, 196609, 1376280, 0, 196609, 1376281, 0, 196609, 1376282, 0, 196609, 1376283, 0, 196609, 1376284, 0, 196609, 1376285, 0, 196609, 1376286, 0, 196609, 1376287, 0, 196609, 1376288, 0, 196609, 1376289, 0, 196615 )
+
+[node name="Camera2D" type="Camera2D" parent="." instance=ExtResource( 50 )]
+position = Vector2( -342.687, 972.695 )
+current = true
+process_mode = 0
+limit_left = -715
+limit_top = -520
+limit_right = 2108
+limit_bottom = 1350
+smoothing_enabled = true
+script = ExtResource( 13 )
+
+[node name="TopLeft" type="Position2D" parent="Camera2D/Limits" index="0"]
+position = Vector2( -715, -520 )
+
+[node name="BottomRight" type="Position2D" parent="Camera2D/Limits" index="1"]
+position = Vector2( 2108, 1350 )
+
+[node name="TopLeft" type="Position2D" parent="Camera2D/Limits" index="2"]
+position = Vector2( -57, -47 )
+
+[node name="BottomRight" type="Position2D" parent="Camera2D/Limits" index="3"]
+position = Vector2( 1329, 761 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Player" type="KinematicBody2D" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( -342.687, 972.695 )
+collision_layer = 2
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+MAX_WALK_SPEED = 400
+MAX_SPRINT_SPEED = 600
+WALK_ACCELERATION = 700
+SPRINT_ACCELERATION = 1000
+FRICTION = 800
+INVISIBILITY = 1
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="CollidablePlants" type="YSort" parent="YSort"]
+
+[node name="Bush" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 192, 194 )
+
+[node name="Bush2" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 530, 471 )
+
+[node name="Bush3" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 799, 118 )
+
+[node name="Bush4" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 707, 436 )
+
+[node name="Bush5" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 422, 486 )
+
+[node name="Bush6" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 114, 504 )
+
+[node name="Bush7" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 653, 519 )
+
+[node name="Bush8" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 74 )]
+position = Vector2( 730, 325 )
+
+[node name="OakTree" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 1472, 18 )
+
+[node name="OakTree2" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( -115, 297 )
+
+[node name="OakTree3" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 385, -118 )
+
+[node name="OakTree4" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 749, 479 )
+
+[node name="OakTree5" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 556, 259 )
+
+[node name="OakTree6" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 1, 128 )
+
+[node name="OakTree7" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 1107, 847 )
+
+[node name="OakTree8" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 1107, -84 )
+
+[node name="OakTree9" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 887, -161 )
+
+[node name="OakTree10" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 537, -148 )
+
+[node name="OakTree11" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( -170, -91 )
+
+[node name="OakTree12" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( -181, 590 )
+
+[node name="OakTree13" type="StaticBody2D" parent="YSort/CollidablePlants" instance=ExtResource( 76 )]
+position = Vector2( 1234, -165 )
+
+[node name="Objects" type="YSort" parent="YSort"]
+
+[node name="Torch" type="Node2D" parent="YSort/Objects" instance=ExtResource( 81 )]
+position = Vector2( -73, 423 )
+
+[node name="StreetLamp2" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 72 )]
+position = Vector2( 1314, -9 )
+scale = Vector2( 4, 4 )
+
+[node name="StreetLamp3" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 72 )]
+position = Vector2( -39, -129 )
+scale = Vector2( 4, 4 )
+
+[node name="StreetLamp" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 72 )]
+position = Vector2( -87, 553 )
+scale = Vector2( 4, 4 )
+
+[node name="StreetLamp4" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 72 )]
+position = Vector2( 460, -127 )
+scale = Vector2( 4, 4 )
+
+[node name="Lamp" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 38 )]
+position = Vector2( 315, 773 )
+scale = Vector2( 4, 4 )
+collision_layer = 2147483649
+script = ExtResource( 60 )
+
+[node name="Lamp2" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 32 )]
+position = Vector2( 710, 778 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 60 )
+
+[node name="Lamp3" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 31 )]
+position = Vector2( -68, 761 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 60 )
+
+[node name="MotionDetectorLamp" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 83 )]
+position = Vector2( 537, 83 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 58 )
+
+[node name="ColourChangingLamp" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 73 )]
+position = Vector2( 1053, 763 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 60 )
+
+[node name="NeonSign" type="Node2D" parent="YSort/Objects" instance=ExtResource( 33 )]
+position = Vector2( -22, -196 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 60 )
+
+[node name="MotionDetectorLamp2" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 83 )]
+position = Vector2( 823, 435 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 58 )
+
+[node name="ColourChangingLamp2" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 73 )]
+position = Vector2( 530, 626 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 60 )
+
+[node name="WoodTable" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 68 )]
+position = Vector2( 202, 780 )
+scale = Vector2( 4, 4 )
+
+[node name="WoodChair" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 69 )]
+position = Vector2( 11, 780 )
+scale = Vector2( 4, 4 )
+
+[node name="NettlePlantPot" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 23 )]
+position = Vector2( -166, 741 )
+script = ExtResource( 63 )
+
+[node name="PlantPot" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 67 )]
+position = Vector2( -145, 828 )
+scale = Vector2( 4, 4 )
+
+[node name="GreenLamp" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 70 )]
+position = Vector2( 993, -271 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 60 )
+
+[node name="Lamp4" type="KinematicBody2D" parent="YSort/Objects" instance=ExtResource( 38 )]
+position = Vector2( 1205, 745 )
+scale = Vector2( 4, 4 )
+collision_layer = 2147483649
+script = ExtResource( 60 )
+
+[node name="OldRadio" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1729, 362 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio2" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1688, 776 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio3" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -86, 1075 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio4" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 430, 1072 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio5" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -215, 758 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio6" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -475, 452 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio7" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 829, 1161 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio8" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -147, -272 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio9" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 812, -350 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio10" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1898, -350 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio11" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1571, 997 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio12" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -514, 986 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio13" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -457, -314 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio14" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -425, 658 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio15" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -450, 38 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio16" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1268, 1001 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio17" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 156, 1086 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio18" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1788, 1040 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio19" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( 1767, 527 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="OldRadio20" type="StaticBody2D" parent="YSort/Objects" instance=ExtResource( 54 )]
+position = Vector2( -236, 1079 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 55 )
+
+[node name="Items" type="YSort" parent="YSort"]
+
+[node name="Fern" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 936, 474 )
+
+[node name="Fern2" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 179, 418 )
+
+[node name="Fern4" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 290, 372 )
+
+[node name="Fern5" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 290, 430 )
+
+[node name="Fern6" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 990, 162 )
+
+[node name="Fern7" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 1055, 100 )
+
+[node name="Fern8" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 998, 105 )
+
+[node name="Fern9" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 945, 109 )
+
+[node name="Fern10" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 990, 472 )
+
+[node name="Fern3" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 233, 415 )
+
+[node name="Fern11" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 645, 37 )
+
+[node name="Fern12" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 409, 156 )
+
+[node name="Fern13" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 556, 358 )
+
+[node name="Fern14" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 1141, -29 )
+
+[node name="Fern15" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 834, 347 )
+
+[node name="Fern16" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 9, 143 )
+
+[node name="Fern17" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 244, 83 )
+
+[node name="Fern18" type="Node2D" parent="YSort/Items" instance=ExtResource( 71 )]
+position = Vector2( 245, 109 )
+
+[node name="PickableItem" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 850, 239 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Red Mushroom"
+
+[node name="PickableItem2" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1098, 57 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Red Mushroom"
+
+[node name="PickableItem7" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 889, 384 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Nettle"
+
+[node name="PickableItem8" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 850, 492 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Nettle"
+
+[node name="PickableItem9" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 559, 645 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Z Flower"
+
+[node name="PickableItem10" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 871, 594 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Z Flower"
+
+[node name="PickableItem11" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 871, 200 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Aluminium Ore"
+
+[node name="PickableItem12" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 871, 100 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Aluminium Plate"
+
+[node name="PickableItem13" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 871, 900 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Aluminium Plate"
+
+[node name="PickableItem14" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 300, 900 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Berry"
+
+[node name="PickableItem15" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 600, 400 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Battery"
+
+[node name="PickableItem16" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1, 400 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Battery"
+
+[node name="PickableItem17" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 234, 554 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Bronze Sword"
+
+[node name="PickableItem18" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 5, 645 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Bronze Sword"
+
+[node name="PickableItem19" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 966, 658 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Computer Chip"
+
+[node name="PickableItem20" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 746, 636 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Computer Chip"
+
+[node name="PickableItem21" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 355, 14 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Copper Ore"
+
+[node name="PickableItem22" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 738, 947 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Copper Ore"
+
+[node name="PickableItem23" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 900, 900 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Copper Wire"
+
+[node name="PickableItem24" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 426, 856 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Electric Motor"
+
+[node name="PickableItem25" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 543, 847 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Electric Motor"
+
+[node name="PickableItem26" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 146, 897 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Electric Sword"
+
+[node name="PickableItem27" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 132, 567 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Electric Sword"
+
+[node name="PickableItem28" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 86, 568 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Iron Ore"
+
+[node name="PickableItem29" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 567, 345 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Iron Ore"
+
+[node name="PickableItem30" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 85, 743 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Oil"
+
+[node name="PickableItem31" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 12, 679 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Oil"
+
+[node name="PickableItem32" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 578, 345 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Plastic"
+
+[node name="PickableItem33" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 456, 901 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Plastic"
+
+[node name="PickableItem34" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 678, 567 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Smoothie"
+
+[node name="PickableItem35" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 500, 135 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Smoothie"
+
+[node name="PickableItem36" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 123, 445 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Steel Sword"
+
+[node name="PickableItem37" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 764, 355 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Steel Sword"
+
+[node name="PickableItem38" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 280, 270 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Twig"
+
+[node name="PickableItem39" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 643, 865 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Twig"
+
+[node name="PickableItem40" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 757, 345 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Wood"
+
+[node name="PickableItem41" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 987, 312 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Wood"
+
+[node name="PickableItem44" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 432, 885 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Wooden Knife"
+
+[node name="PickableItem45" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 865, 342 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Wooden Knife"
+
+[node name="PickableItem46" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1440, 233 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Water Bottle"
+
+[node name="PickableItem47" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1437, 312 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Empty Bottle"
+
+[node name="PickableItem48" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1536, 233 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Beer"
+
+[node name="PickableItem49" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1536, 382 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Orange Juice"
+
+[node name="PickableItem50" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1536, 310 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Smoothie"
+
+[node name="PickableItem51" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( 1437, 384 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Sex on the Beach"
+
+[node name="PickableItem52" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( -170, 162 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Keyboard"
+
+[node name="PickableItem53" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( -115, -269 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Magic Star"
+
+[node name="PickableItem54" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 2 )]
+position = Vector2( -292, -49 )
+collision_layer = 64
+script = ExtResource( 1 )
+item_name_export = "Plate"
+
+[node name="BerryBush" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 77 )]
+position = Vector2( 132, -52 )
+collision_layer = 65
+collision_mask = 3
+script = ExtResource( 18 )
+
+[node name="BerryBush2" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 77 )]
+position = Vector2( -3, 265 )
+collision_layer = 65
+collision_mask = 3
+script = ExtResource( 18 )
+
+[node name="BerryBush3" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 77 )]
+position = Vector2( 987, 7 )
+collision_layer = 65
+collision_mask = 3
+script = ExtResource( 18 )
+
+[node name="AppleTree" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 78 )]
+position = Vector2( 241, -114 )
+collision_layer = 65
+collision_mask = 3
+script = ExtResource( 17 )
+
+[node name="MoneyTree" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 79 )]
+position = Vector2( -284, 136 )
+collision_layer = 65
+collision_mask = 3
+script = ExtResource( 22 )
+
+[node name="ItemDrop" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 8 )]
+position = Vector2( -150, 70 )
+collision_layer = 64
+script = ExtResource( 3 )
+item_name_export = "Aluminium Ore"
+
+[node name="ItemDrop2" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 8 )]
+position = Vector2( 481, 28 )
+collision_layer = 64
+script = ExtResource( 3 )
+item_name_export = "Red Mushroom"
+
+[node name="ItemDrop3" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 8 )]
+position = Vector2( 341, 43 )
+collision_layer = 64
+script = ExtResource( 3 )
+item_name_export = "Orange"
+
+[node name="ItemDrop4" type="KinematicBody2D" parent="YSort/Items" instance=ExtResource( 8 )]
+position = Vector2( 217, 649 )
+collision_layer = 64
+script = ExtResource( 3 )
+item_name_export = "Dog Translation Guide"
+
+[node name="Entities" type="YSort" parent="YSort"]
+
+[node name="Dog" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 43 )]
+position = Vector2( 97.8627, 102.66 )
+collision_layer = 16
+script = ExtResource( 21 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="Doge" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 34 )]
+position = Vector2( 368.121, -483.822 )
+collision_layer = 16
+script = ExtResource( 21 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="Dog2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 43 )]
+position = Vector2( 736.362, 92.0472 )
+collision_layer = 16
+script = ExtResource( 21 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="Dog3" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 43 )]
+position = Vector2( 405.925, 1.09076 )
+collision_layer = 16
+script = ExtResource( 21 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="Doge2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 34 )]
+position = Vector2( -659.926, -477.646 )
+collision_layer = 16
+script = ExtResource( 21 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="Blue Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 30 )]
+position = Vector2( 402.244, 349.475 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Blue Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 30 )]
+position = Vector2( -1342.79, 1059.75 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 35 )]
+position = Vector2( 1218.6, -728.039 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Purple Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 25 )]
+position = Vector2( -405.402, -212.438 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Red Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 24 )]
+position = Vector2( 620.381, 565.965 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Orange Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 26 )]
+position = Vector2( 434.742, 163.657 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Pink Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 37 )]
+position = Vector2( 1178.14, 39.4213 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 500.244, -27.8546 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 4" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 510.792, -567.787 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 5" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 844.556, 331.421 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 6" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 248.113, -90.0014 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 7" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 764.611, -184.585 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 8" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 633.681, -24.523 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 9" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 1439.5, 769.553 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 10" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 1412.83, 268.435 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 11" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 179.949, 231.253 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 12" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 1147.02, -520.723 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 13" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 2636.22, 28.4408 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 14" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 583.03, 908.536 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 15" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 1577.37, 10.561 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 16" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 1835.19, -608.824 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 17" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 913.349, 105.371 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 18" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( 1007.25, 394.465 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly 3" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 36 )]
+position = Vector2( -491.351, 551.643 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Cyan Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 35 )]
+position = Vector2( 861.068, 648.4 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Green Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 27 )]
+position = Vector2( 566.28, 561.22 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Green Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 27 )]
+position = Vector2( 1472.35, 1120.62 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Pink Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 37 )]
+position = Vector2( 292.387, 1268.42 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Purple Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 25 )]
+position = Vector2( 1137.27, -23.1235 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Yellow Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 28 )]
+position = Vector2( 606.441, 134.225 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Yellow Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 28 )]
+position = Vector2( 2033.43, 460.136 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Yorange Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 29 )]
+position = Vector2( -2.2662, -1284.2 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Yorange Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 29 )]
+position = Vector2( 961.091, 398.665 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="DogAttack" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 993.237, -382.315 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 436.36, -483.91 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack8" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 2067.92, -286.697 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack9" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 881.078, -211.07 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack10" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 1152.8, -133.694 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack11" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 2067.89, -322.753 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack12" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 1980.48, 410.138 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack13" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 1491.62, -483.872 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack14" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 1574.13, -104.92 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack15" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 1180.85, -483.809 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="DogAttack16" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 52 )]
+position = Vector2( 787.978, -483.849 )
+collision_layer = 16
+script = ExtResource( 15 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 5
+INVISIBILITY = 1
+
+[node name="Swallow Butterfly" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 53 )]
+position = Vector2( -882.008, 203.627 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Swallow Butterfly2" type="KinematicBody2D" parent="YSort/Entities" instance=ExtResource( 53 )]
+position = Vector2( 457.924, 489.006 )
+collision_layer = 16
+script = ExtResource( 61 )
+MAX_SPEED = 300
+ACCELERATION = 600
+FRICTION = 500
+WANDER_TARGET_RANGE = 50
+INVISIBILITY = 1
+
+[node name="Buildings" type="YSort" parent="YSort"]
+
+[node name="SmallHouse" type="Node2D" parent="YSort/Buildings" instance=ExtResource( 51 )]
+position = Vector2( 1727, 25 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 64 )
+interior_scene = ExtResource( 75 )
+
+[node name="SmallHouse2" type="Node2D" parent="YSort/Buildings" instance=ExtResource( 47 )]
+position = Vector2( 1469, -297 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 64 )
+interior_scene = ExtResource( 80 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource( 20 )
+
+[node name="HealthUI" type="Control" parent="UI" instance=ExtResource( 42 )]
+margin_right = 1283.0
+margin_bottom = 123.0
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory" type="Node2D" parent="UI" instance=ExtResource( 46 )]
+visible = false
+script = ExtResource( 14 )
+
+[node name="Hotbar" type="Node2D" parent="UI" instance=ExtResource( 44 )]
+script = ExtResource( 16 )
+
+[node name="Crafting" type="Node2D" parent="UI" instance=ExtResource( 40 )]
+visible = false
+script = ExtResource( 19 )
+
+[node name="PauseMenu" type="Control" parent="UI" instance=ExtResource( 48 )]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 7 )
+script = ExtResource( 65 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPS Counter" type="Node2D" parent="UI" instance=ExtResource( 45 )]
+script = ExtResource( 66 )
+
+[node name="Collections" type="Node2D" parent="UI" instance=ExtResource( 49 )]
+visible = false
+script = ExtResource( 57 )
+
+[node name="Current Time Counter" type="Node2D" parent="UI" instance=ExtResource( 39 )]
+script = ExtResource( 59 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+script = ExtResource( 62 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 53 )
+
+[editable path="Camera2D"]
